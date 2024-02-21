@@ -3755,6 +3755,18 @@ input, select, textarea {
 
 /* Main */
 
+.round-image {
+	display: inline-block; /* Ensures proper spacing and responsiveness */
+	position: relative; /* Creates a stacking context for the pseudo-element */
+	overflow: hidden; /* Hides overflowing parts, preventing distorted edges */
+	border-radius: 50%; /* Makes the container itself circular */
+	width: 385px; /* Adjust as needed based on your design */
+	height: 385px; /* Adjust as needed based on your design */
+	background-color: transparent; /* Optional background color for transparency */
+	object-fit: cover;
+}
+
+
 	#main {
 		background-color: #ffffff;
 		position: relative;
